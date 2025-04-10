@@ -1,4 +1,5 @@
 import random
 
-x = random.randint(1,10000)
+x = random.randrange(10,50)
+
 print(x)
