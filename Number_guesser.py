@@ -1,10 +1,6 @@
 import random
 
-lower_bound = 1
-upper_bound = 100
-max_attempts = 7
-
-random_number = random.randint(lower_bound, upper_bound)
+random_number = random.randint(1, 100)
 
 def user_guess():
 
@@ -13,7 +9,7 @@ def user_guess():
         try:
             user_number = int(input("Enter a number between 1 and 100: "))
 
-            if lower_bound <= user_number <= upper_bound:
+            if 1 <= user_number <= 100:
                 return user_number
             
             else:
@@ -38,7 +34,7 @@ def play_game():
     attempts = 0
     won = False
 
-    while attempts < max_attempts:
+    while attempts < 10:
 
         attempts += 1
         user_input = user_guess()
